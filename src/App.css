@@ -1,38 +1,276 @@
-.App {
-  text-align: center;
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+
+.homepage{
+
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  width: 96%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 2.5vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav img{
+  width: 30px;
+  height: 30px;
+}
+
+nav h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero-content{
+
+  width: 100%;
+  min-height: 85vh;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+@media only screen and (max-width: 800px){
+  .hero-content{
+
+    width: 94%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 3vh 3%;
+    margin-bottom: 3vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-part-1{
+
+  width: 46%;
+}
+@media only screen and (max-width: 800px){
+  .hero-part-1{
+
+    width: 100%;
+  }
+}
+.hero-part-1 li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(237, 205, 122, 0.82);
+  color: rgb(150, 117, 33);
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 4vh;
+}
+
+.li-icon{
+
+}
+
+.hero-part-1 h2{
+
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero-part-1 p{
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.hero-cards{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-top: 5vh;
+}
+
+.hero-card{
+  background-color: rgba(231, 215, 250, 0.445);
+  padding: 2% 3%;
+  border-radius: 0.8rem;
+}
+
+.hero-card h3{
+  margin: 0;
+  display: flex;
   align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.hero-icons{
+
+
+}
+
+.hero-card p{
+  font-size: 0.7rem;
+}
+
+
+.hero-part-2{
+  width: 46%;
+}
+
+.hero-part-2 img{
+  width: 95%;
+
+}
+
+@media only screen and (max-width: 800px){
+  .hero-part-2{
+
+    width: 100%;
+  }
+  .hero-part-2 img{
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+
+.about{
+  background-color: rgba(231, 215, 250, 0.445);
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about h3{
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.about h5{
+  margin: 0;
+  font-weight: 400;
+  width: 40%;
+  margin-left: 30%;
+}
+.about span{
+  background-color: #fff;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  padding: 0 1vh;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;}
+.about span input{
+
+  border: none;
+  width: 80%;
+  padding: 0 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about span input:focus{
+
+  outline: none;
+}
+
+.about span button{
+  height: 6vh;
+  border-radius: 3rem;
+  width: 20%;
+  border: none;
+  color: #fff;
+  background: rgb(74,86,193);
+background: linear-gradient(90deg, rgba(74,86,193,1) 0%, rgba(184,105,225,1) 100%);
+cursor: pointer;
+}
+
+.about span button:hover{
+  
+}
+
+.about h4{
+  margin: 0;
+  font-weight: 600;
+}
+.lock-icon{
+
+}
+
+.about p{
+  margin: 0;
+  font-size: 0.7rem;
+  width: 40%;
+  margin-left: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .about p, .about h5, .about span{
+    width: 70%;
+    margin-left: 15%;
   }
-  to {
-    transform: rotate(360deg);
+  .about span button{
+    width: 40%;
   }
+}
+
+
+.footer{
+
+  text-align: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer hr{
+
+  width: 10%;
+  margin-bottom: 5vh;
+}
+
+.footer h3{
+
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer p{
+  font-size: 0.8rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.footer span{
+
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.footer-icons{
+
+  font-size: 1.5rem;
+  margin-top: 3vh;
+  color: #8e8e8e;
 }
